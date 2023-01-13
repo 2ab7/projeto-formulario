@@ -1,0 +1,43 @@
+@media(max-width:425px) {
+
+    main.main-container section.sign-in-container h1.title-create-account {
+        text-align: center;
+    }
+
+    main.main-container section.sign-in-container form.form .form-informations label {
+        font-size: 14px;
+    }
+
+    section.sign-in-container form.form .form-informations input {
+        width: 175px;
+    }
+
+    main.main-container section.container-warning h2.glad-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    main.main-container section.container-warning p {
+        font-size: 13px;
+    }
+}
+@media(max-width:375px){
+    main.main-container section.sign-in-container h1.title-create-account {
+        text-align: center;
+        font-size: 20px;
+    }
+    main.main-container section.container-warning{
+        display: none;
+    }
+    main.main-container section.sign-in-container{
+        border-right: 5px solid #acbae1;
+        border-radius: 20px;
+        width: 90%;
+    }
+    main.main-container section.sign-in-container form.form .form-informations label{
+        display:block;
+    }
+    section.sign-in-container form.form .form-informations input{
+        width: 100%;
+    }
+}

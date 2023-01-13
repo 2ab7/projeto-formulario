@@ -1,0 +1,169 @@
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/background.png) center center no-repeat;
+}
+main.main-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 800px;
+    max-width: 100%;
+}
+main.main-container section.sign-in-container{
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    border-left:5px solid #acbae1;
+    border-right:1px solid #acbae1 ;
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+main.main-container section.sign-in-container h1.title-create-account{
+    font-size: 35px;
+    font-weight: 700;
+    color: #acbae1;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+main.main-container section.sign-in-container form.form .form-informations{
+    position: relative;
+    margin-bottom: 15px;
+}
+main.main-container section.sign-in-container form.form .form-informations label.name::before{
+    content: "";
+    background: url(../images/icon-name.png);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 36px;
+    left: 10px;
+}
+main.main-container section.sign-in-container form.form .form-informations label.email::before{
+    content: "";
+    background: url(../images/icon-email.png);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 36px;
+    left: 10px;
+}
+main.main-container section.sign-in-container form.form .form-informations label.password::before,
+main.main-container section.sign-in-container form.form .form-informations label.confirm-password::before{
+    content: "";
+    background: url(../images/password.png);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 36px;
+    left: 10px;
+}
+main.main-container section.sign-in-container form.form .form-informations label{
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #acbae1;
+}
+section.sign-in-container form.form .form-informations input{
+    width: 100%;
+    padding: 15px 30px 15px 30px;
+    height: 40px;
+    border-radius: 20px;
+}
+button.btn-send{
+    width: 100%;
+    padding: 15px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #492080;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: all 400ms ease;
+    margin-top: 10px;
+}
+.effect::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 50px;
+    background:rgba(255, 255, 255, 0.3);
+    transition: all 2s ease;
+    border-radius: 10px;
+}
+.effect:hover::before{
+    width: 100%;
+}
+main.main-container section.container-warning{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border-right: 5px solid #acbae1;
+}
+main.main-container section.container-warning h2.glad-title{
+    color: #acbae1;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+main.main-container section.container-warning p{
+    color: #acbae1;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
+main.main-container section.container-warning img.icon-form{
+    margin-bottom: 10px;
+    animation: image-neon 1s alternate infinite ease-in-out;
+}
+
+main.main-container .form-informations i{
+    position: absolute;
+    top: 34px;
+    right: 10px;
+    visibility: hidden;
+}
+main.main-container .form-informations small{
+    font-size: 14px;
+    color: #db5a5a;
+    visibility: hidden;
+}
+
+
+main.main-container .form-informations.success input{
+    border: 3px solid #4eca64;
+}
+main.main-container .form-informations.error input{
+    border: 3px solid #db5454;
+}
+main.main-container .form-informations.success i img.img-success{ 
+    visibility: visible;
+}
+main.main-container .form-informations.error i img.img-error{
+    visibility: visible;
+}
+main.main-container .form-informations.error small{
+    visibility: visible;
+}
